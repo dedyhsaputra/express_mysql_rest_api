@@ -1,0 +1,39 @@
+
+
+
+// tambah data
+###
+POST http://localhost:3000/api/absen
+Content-Type: application/json
+
+{
+    "name" : "tambah",
+    "email" : "tambah@gmail.com",
+    "phone" : "5235235",
+    "batch" : "8"
+}
+
+
+//menampilkan data
+###
+GET http://localhost:3000/api/absen
+Content-Type: application/json
+
+
+//menghapus data
+###
+DELETE http://localhost:3000/api/absen
+Content-Type: application/json
+
+{
+    "id" : "2"
+}
+
+
+###
+PATCH http://localhost:3000/api/absen/edit/1
+Content-Type: application/json
+
+{
+    "name" : "ddy ganteng", "phone" : "0214819"
+}
